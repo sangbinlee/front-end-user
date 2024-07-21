@@ -15,6 +15,7 @@ pipeline {
         }
         stage('Config') {
           steps {
+            echo 'Config...  now....'
             // sh 'npm set registry https://registry.npm.taobao.org'
             // sh 'npm set disturl https://npm.taobao.org/dist'
             // sh 'npm set chromedriver_cdnurl http://cdn.npm.taobao.org/dist/chromedriver'

@@ -4,6 +4,10 @@ pipeline {
         stage('build') {
             steps {
                 echo 'building the application...'
+                cd "/var/jenkins_home/workspace/Book Management App/src/frontend"
+                yarn install
+                yarn clean
+                yarn build
             }
         }
         stage('test') {

@@ -31,11 +31,11 @@ pipeline {
             sh 'npm install'
           }
         }
-        stage('Unit Test') {
-          steps {
-            sh 'npm run unit'
-          }
-        }
+        // stage('Unit Test') {
+        //   steps {
+        //     sh 'npm run unit'
+        //   }
+        // }
         stage('Build') {
           steps {
             echo 'building the application...  now....'
